@@ -29,10 +29,10 @@ Para abordar el desafío de clasificación de imágenes pequeñas, se propone la
    - **Normalización**: Para mejorar la convergencia de los modelos, se puede normalizar cada imagen para que sus valores de píxeles estén en el rango de [0, 1].
    - **Aumento de Datos (Data Augmentation)**: Para aumentar la diversidad de los datos y evitar el sobreajuste (overfitting), se pueden aplicar técnicas como rotación, recorte y volteo de las imágenes.
 
-### 2. **Modelo**
+### 2. **Modelos**
+Todos los modelos realizados para la clasificación de este desafío son modelos basados a partir de:
    - **Redes Neuronales Convolucionales (CNNs)**: Dado que estamos tratando con imágenes, se utilizarán redes neuronales convolucionales (CNN) para la extracción de características y la clasificación. Las CNN son altamente efectivas en el procesamiento de imágenes debido a su capacidad para aprender patrones espaciales en los datos.
-   - **Arquitectura Sugerida**: Una arquitectura simple basada en capas convolucionales seguidas de capas de agrupación (pooling) y finalmente una capa densa para la clasificación.
-
+   - 
 ### 3. **Entrenamiento**
    - **Algoritmo de Optimización**: Este caso se realizó la utilización del optimizador Adam con ajuste dinámico de la tasa de aprendizaje.
    - **Función de Pérdida**: Para este problema de clasificación multiclase, se utilizará `categorical_crossentropy` como función de pérdida.
